@@ -1,0 +1,227 @@
+/* Danny Zared Yax-Paramo, 09/17/2026, Portfolio_Style.css */
+
+/* CSS Reset */
+*body, header, nav, footer, img, h1, h3, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for mobile viewport */
+.mobile h1 {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.mobile h3 {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Style rules to show moblie class and hide tab-desk class */
+.tab-desk {
+    display: none;
+}
+.mobile {
+    display: block;
+}
+
+/* Style rules for navigation area*/
+nav {
+    background-color: #ffffff;
+}
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0%;
+}
+nav li {
+    display: block;
+    border-top-width: 0.5px;
+    border-top-color: #000000;
+    border-top-style: solid;
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif, Arial, sans-serif;
+    font-weight: bold;
+}
+nav li a {
+    display: block;
+    color: #000000;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    font-family: Geneva, Arial, sans-serif;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+main p {
+    font-size: 1.25em;
+}
+main h3 {
+    padding-top: 2%;
+}
+main ul {
+    list-style-type: square;
+}
+
+/* Style rules for class and id selectors */
+.link {
+    color: #77f379;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+#Contact_Info {
+    text-align: center;
+}
+.small {
+    max-width: 35%;
+    display: block;
+}
+.phone {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.tel-link {
+    background-color: #77f379;
+    padding: 2%;
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.round {
+    border-radius: 6px;
+}
+#About_Me ul {
+    margin-left: 10%;
+}
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #ffffff;
+    color: #000000;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 0%;
+    padding-left: 0%;
+}
+footer a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px) {
+/* Tablet Viewport: Show tab-desk class, hide mobile class */
+
+.tab-desk {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+/* Tablet Viewport: Style rules for nav area */
+    nav li{
+        border-top: none;
+        display: inline-block;
+        font-size: 1.25em;
+    }
+    nav li a {
+        padding: 0.5em;
+    }
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px), print {
+    body {
+        background: linear-gradient(#353535, #77f379);
+    }
+    #wrapper {
+        width: 1920px;
+        margin-bottom: 0%;
+        margin-top: 0%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main {
+        background-color: #000000;
+    }
+    header {
+        background-color: #000000;
+    }
+}
+
+/* Media Query for Destop Viewport */
+@media screen and (min-width: 1000px), print {
+/* Style rules for nav area */
+    nav li{
+        font-size: 1.5em;
+    }
+    nav li a {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+    nav li a:hover {
+      color: #000000;
+      background-color: #77f379;
+    }
+}
+
+/* Portfolio navigation */
+.portfolio-navbar {
+    background-color: #000;
+    padding: 0;
+}
+
+/* Navigation list */
+.portfolio-navbar .navbar-nav {
+    width: 100%;
+    justify-content: center;
+}
+
+/* Navigation links */
+.portfolio-navbar .nav-link {
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif, Arial, sans-serif;
+    font-size: 20px;
+}
+
+/* Hover effect */
+.portfolio-navbar .nav-link:hover {
+    color: #77f397;
+    background-color: #333;
+}
+
+/* Current/active link */
+.portfolio-navbar .nav-link.active {
+    color: #77f397;
+}
